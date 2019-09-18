@@ -42,7 +42,7 @@ def reply_to_tweets():
         if '#patbot' in mention.full_text.lower():
             print('Found #patbot!', flush=True)
             print('Responding back...', flush=True)
-            api.update_status('Hello'+' '+'@'+mention.user.screen_name+' '+',I will get back to you!', mention.id)
+            api.update_status('Hello'+' '+'@'+mention.user.screen_name+' '+', I will get back to you!', mention.id)
 
 while True:
     reply_to_tweets()
